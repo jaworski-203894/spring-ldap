@@ -4,6 +4,11 @@ objectclass: domain
 objectclass: extensibleObject
 dc: springframework
 
+dn: ou=own,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: own
+
 dn: ou=groups,dc=springframework,dc=org
 objectclass: top
 objectclass: organizationalUnit
@@ -103,8 +108,6 @@ cn: Space Cadet
 sn: Cadet
 uid: space cadet
 userPassword: spacecadetspassword
-
-
 
 dn: cn=developers,ou=groups,dc=springframework,dc=org
 objectclass: top
