@@ -10,15 +10,8 @@ import java.util.List;
 @RestController
 public class HomeController {
 
-    @Autowired
-    private SomethingLikeService service;
-
     @GetMapping("/")
     public String index() {
         return "Welcome to the home page!";
-    }
-    @GetMapping("/users")
-    public List<String> users() {
-        return service.getAllNames();
     }
 }
